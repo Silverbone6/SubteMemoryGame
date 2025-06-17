@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "name": "subtememorygame",
+  "version": "1.0.0",
+  "description": "Juego de memoria de las estaciones del subte de Buenos Aires.",
+  "type": "commonjs",
+  "main": "api.js",
+  "scripts": {
+    "dev": "node api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silverbone6/TrenesApp.git"
+  },
+  "keywords": [
+    "subte"
+  ],
+  "author": "marcos villena & ignacio tomasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silverbone6/TrenesApp/issues"
+  },
+  "homepage": "https://github.com/Silverbone6/TrenesApp#readme"
+}

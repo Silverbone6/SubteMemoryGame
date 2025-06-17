@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  backend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install express --save && npm install nodemon --save-dev && npx nodemon api.js"
+  db:
+    image: postgres:15
+    ports: 
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=subte123
+      - POSTGRES_USERNAME=rielesdelplata
+      - POSTGRES_DB=subtegame
+volumes:
+  db_data:
