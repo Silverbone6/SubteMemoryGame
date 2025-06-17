@@ -1,0 +1,12 @@
+{
+    "0": {
+        "name": "Roca",
+        "origin": "Constitución",
+        "end": "La Plata"
+    },
+    "1": {
+        "name": "Mitre",
+        "origin": "Retiro",
+        "end": "Tigre"
+    }
+}
