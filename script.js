@@ -8,8 +8,8 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png'
 }).addTo(mapa);            
   
 L.polyline(
-    linea_a, {
-        color: '#0ab4db',
+    linea_a[0], {
+        color: linea_a[1],
         weight: 5
     }
 ).addTo(mapa);
