@@ -15,5 +15,3 @@ for (let i = 0; i < lineas.length; i++) {
         weight: 5
     }).addTo(mapa);
 }
-
-
