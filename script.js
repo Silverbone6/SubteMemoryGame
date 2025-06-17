@@ -7,39 +7,13 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png'
     maxZoom: 18,
 }).addTo(mapa);            
   
-L.polyline(
-    linea_a, {
-        color: '#0ab4db',
+var lineas = [ linea_a, linea_b, linea_c, linea_d, linea_e, linea_h, linea_p ];
+
+for (let i = 0; i < lineas.length; i++) {
+    L.polyline(lineas[i][0], {
+        color: lineas[i][1],
         weight: 5
-    }
-).addTo(mapa);
-L.polyline(
-    linea_b, {
-        color: '#b30000',
-        weight: 5
-    }
-).addTo(mapa);
-L.polyline(
-    linea_c, {
-        color: '#0d47a1',
-        weight: 5
-    }
-).addTo(mapa);
-L.polyline(
-    linea_d, {
-        color: '#4caf50',
-        weight: 5
-    }
-).addTo(mapa);
-L.polyline(
-    linea_e, {
-        color: '#663dd8',
-        weight: 5
-    }
-).addTo(mapa);
-L.polyline(
-    linea_h, {
-        color: '#ffeb3b',
-        weight: 5
-    }
-).addTo(mapa);
+    }).addTo(mapa);
+}
+
+
