@@ -1,19 +1,9 @@
-{
+const stations = {
     "type": "FeatureCollection",
         "name": "estaciones_de_subte_WGS84",
             "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-        { "type": "Feature", 
-            "properties": { 
-                "ID": 1.0, 
-                "ESTACION": "CASEROS", 
-                "LINEA": "H" 
-            }, 
-            "geometry": { 
-                "type": "Point", 
-                "coordinates": [-58.39892758536007, -34.635750180343017] 
-            } 
-        },
+        { "type": "Feature", "properties": { "ID": 1.0, "ESTACION": "CASEROS", "LINEA": "H" }, "geometry": { "type": "Point", "coordinates": [-58.39892758536007, -34.635750180343017] } },
         { "type": "Feature", "properties": { "ID": 2.0, "ESTACION": "INCLAN - MEZQUITA AL AHMAD", "LINEA": "H" }, "geometry": { "type": "Point", "coordinates": [-58.400969556016499, -34.629375657572822] } },
         { "type": "Feature", "properties": { "ID": 3.0, "ESTACION": "HUMBERTO 1°", "LINEA": "H" }, "geometry": { "type": "Point", "coordinates": [-58.402322730424025, -34.623092320501897] } },
         { "type": "Feature", "properties": { "ID": 4.0, "ESTACION": "VENEZUELA", "LINEA": "H" }, "geometry": { "type": "Point", "coordinates": [-58.404731716490012, -34.615242152270575] } },
@@ -104,4 +94,4 @@
         { "type": "Feature", "properties": { "ID": 89.0, "ESTACION": "CATALINAS", "LINEA": "E" }, "geometry": { "type": "Point", "coordinates": [-58.371700332990066, -34.596596818974987] } },
         { "type": "Feature", "properties": { "ID": 88.0, "ESTACION": "CORREO CENTRAL", "LINEA": "E" }, "geometry": { "type": "Point", "coordinates": [-58.3704125010713, -34.603013905923149] } }
     ]
-}
+};  
