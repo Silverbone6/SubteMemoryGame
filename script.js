@@ -9,9 +9,14 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png'
   
 var lineas = [ linea_a, linea_b, linea_c, linea_d, linea_e, linea_h, linea_p ];
 
-for (let i = 0; i < lineas.length; i++) {
-    L.polyline(lineas[i][0], {
-        color: lineas[i][1],
+for (let line = 0; line < lineas.length; line++) {
+    L.polyline(lineas[line][0], {
+        color: lineas[line][1],
         weight: 5
     }).addTo(mapa);
+}
+
+
+for (let station = 0; station < stations.length; station++) {
+    L.marker(stations[station].coordinates).addTo(mapa);
 }

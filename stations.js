@@ -1,9 +1,9 @@
-[
+var stations = [
   {
     "id": 1,
     "estacion": "CASEROS",
     "linea": "H",
-    "coordinates": [-58.39892758536007, -34.635750180343017]
+    "coordinates": [-34.635750180343017, -58.39892758536007]
   },
   {
     "id": 2,
