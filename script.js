@@ -32,11 +32,3 @@ for (let station = 0; station < stations.length; station++) {
         L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
     }
 }
-
-import { stations } from './stations.js';
-
-if (existe){
-    alert(true);
-} else {
-    alert(false); 
-}
