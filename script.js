@@ -17,34 +17,19 @@ for (let line = 0; line < lineas.length; line++) {
 }
 
 
+const iconosPorLinea = {
+    "A": icon_a,
+    "B": icon_b,
+    "C": icon_c,
+    "D": icon_d,
+    "E": icon_e,
+    "H": icon_h,
+    "P": icon_p
+};
+
 for (let station = 0; station < stations.length; station++) {
-    if (stations[station].linea === "A") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_a,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "B") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_b,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "C") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_c,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "D") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_d,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "E") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_e,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "H") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_h,
-        }).addTo(mapa);
-    } else if (stations[station].linea === "P") {
-        L.marker(stations[station].coordinates, {
-            icon: icon_p,
-        }).addTo(mapa);
+    const icono = iconosPorLinea[stations[station].linea];
+    if (icono) {
+        L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
     }
 }
