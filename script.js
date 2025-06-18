@@ -16,7 +16,6 @@ for (let line = 0; line < lineas.length; line++) {
     }).addTo(mapa);
 }
 
-
 const iconosPorLinea = {
     "A": icon_a,
     "B": icon_b,
@@ -32,4 +31,12 @@ for (let station = 0; station < stations.length; station++) {
     if (icono) {
         L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
     }
+}
+
+import { stations } from './stations.js';
+
+if (existe){
+    alert(true);
+} else {
+    alert(false); 
 }
