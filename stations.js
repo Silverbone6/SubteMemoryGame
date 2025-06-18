@@ -45,7 +45,7 @@ var stations = [
     "id": 8,
     "estacion": "TRIBUNALES - TEATRO COLÓN",
     "linea": "D",
-    "coordinates": [-34.601587165139371, -58.385142358801282]
+    "coordinates": [-34.601493, -58.384480]
   },
   {
     "id": 9,
@@ -75,7 +75,7 @@ var stations = [
     "id": 13,
     "estacion": "RETIRO",
     "linea": "C",
-    "coordinates": [-34.59119380833323, -58.374018216481595]
+    "coordinates": [-34.591186, -58.374267]
   },
   {
     "id": 14,
@@ -339,7 +339,7 @@ var stations = [
     "id": 57,
     "estacion": "SAN MARTIN",
     "linea": "C",
-    "coordinates": [-34.595057404779155, -58.377819050986716]
+    "coordinates": [-34.595319, -58.377421]
   },
   {
     "id": 58,
@@ -399,7 +399,7 @@ var stations = [
     "id": 67,
     "estacion": "PLAZA DE LOS VIRREYES - EVA PERON",
     "linea": "E",
-    "coordinates": [-34.643312162409799, -58.461651761689808]
+    "coordinates": [-34.642949, -58.461551]
   },
   {
     "id": 68,
@@ -513,13 +513,13 @@ var stations = [
     "id": 86,
     "estacion": "SANTA FE - CARLOS JAUREGUI",
     "linea": "H",
-    "coordinates": [-34.594525396218771, -58.402376175034945]
+    "coordinates": [-34.595072, -58.402559]
   },
   {
     "id": 87,
     "estacion": "FACULTAD DE DERECHO - JULIETA LANTERI",
     "linea": "H",
-    "coordinates": [-34.583036340009301, -58.391018826560021]
+    "coordinates": [-34.582972, -58.391207]
   },
   {
     "id": 88,
@@ -531,120 +531,120 @@ var stations = [
     "id": 89,
     "estacion": "CATALINAS",
     "linea": "E",
-    "coordinates": [-34.596596818974987, -58.371700332990066]
+    "coordinates": [-34.596997, -58.371788]
   },
   {
     "id": 90,
     "estacion": "RETIRO",
     "linea": "E",
-    "coordinates": [-34.59211436193101, -58.375849837430458]
+    "coordinates": [-34.592431, -58.375683]
   },
   {
     "id": 91,
     "estacion": "Int. Saguier",
     "linea": "P",
-    "coordinates": [20166.60243404428, 68392.72486529384]
+    "coordinates": [-34.643211, -58.461623]
   },
   {
     "id": 92,
     "estacion": "Balbastro (Cem. de Flores)",
     "linea": "P",
-    "coordinates": [20631.968873183523, 67855.36106663871]
+    "coordinates": [-34.648832, -58.456256]
   },
   {
     "id": 93,
     "estacion": "Ana María Janer",
     "linea": "P",
-    "coordinates": [21215.54400805731, 66646.30518560439]
+    "coordinates": [-34.659458, -58.450034]
   },
   {
     "id": 94,
     "estacion": "Escalada",
     "linea": "P",
-    "coordinates": [20296.318074083563, 64979.36701757377]
+    "coordinates": [-34.674300, -58.459851]
   },
   {
     "id": 95,
     "estacion": "Gral. Savio",
     "linea": "P",
-    "coordinates": [20339.855439357514, 63445.54097775307]
+    "coordinates": [-34.688804, -58.460205]
   },
   {
     "id": 96,
     "estacion": "Cecilia Grierson",
     "linea": "P",
-    "coordinates": [20490.169765693518, 65208.79155584662]
+    "coordinates": [-34.672217, -58.457565]
   },
   {
     "id": 97,
     "estacion": "Nicolás Descalzi",
     "linea": "P",
-    "coordinates": [20115.85748247068, 64031.97391625561]
+    "coordinates": [-34.682726, -58.462447]
   },
   {
     "id": 98,
     "estacion": "Larrazábal",
     "linea": "P",
-    "coordinates": [19811.13245477115, 64308.72592656227]
+    "coordinates": [-34.680591, -58.465376]
   },
   {
     "id": 99,
     "estacion": "Ana Díaz",
     "linea": "P",
-    "coordinates": [19668.741847846777, 64274.224543292075]
+    "coordinates": [-34.680529, -58.466738]
   },
   {
     "id": 100,
     "estacion": "Somellera",
     "linea": "P",
-    "coordinates": [20861.9277845125, 66985.593539849]
+    "coordinates": [-34.656581, -58.453767]
   },
   {
     "id": 101,
     "estacion": "Pola",
     "linea": "P",
-    "coordinates": [19894.28030709145, 64579.51372403564]
+    "coordinates": [-34.678050, -58.464410]
   },
   {
     "id": 102,
     "estacion": "Fernández de la Cruz",
     "linea": "P",
-    "coordinates": [21530.84337811517, 66343.88214550649]
+    "coordinates": [-34.662229, -58.446665]
   },
   {
     "id": 103,
     "estacion": "Pte. Illia",
     "linea": "P",
-    "coordinates": [21356.039779235176, 65995.24054751392]
+    "coordinates": [-34.665299, -58.448596]
   },
   {
     "id": 104,
     "estacion": "Pque. de la Ciudad",
     "linea": "P",
-    "coordinates": [20823.32032745009, 65582.40179601495]
+    "coordinates": [-34.670223, -58.455505]
   },
   {
     "id": 105,
     "estacion": "Gabino Ezeiza (Av. Cnel. Roca)",
     "linea": "P",
-    "coordinates": [20479.88019293, 63697.565414226876]
+    "coordinates": [-34.685999, -58.458070]
   },
   {
     "id": 106,
     "estacion": "Ctro. Cívico Lugano",
     "linea": "P",
-    "coordinates": [19741.940190004352, 64099.52719185853]
+    "coordinates": [-34.683643, -58.465054]
   },
   {
     "id": 107,
     "estacion": "Mariano Acosta (Bo. Carrillo)",
     "linea": "P",
-    "coordinates": [20625.91900294975, 67208.38150271018]
+    "coordinates": [-34.654401, -58.456578]
   },
   {
     "id": 108,
     "estacion": "Ntra. Sra. de Fátima",
     "linea": "P",
-    "coordinates": [21324.2102127047, 66539.89452105039]
+    "coordinates": [-34.660622, -58.448575]
   }
 ]
