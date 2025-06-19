@@ -1,4 +1,4 @@
-var stations = [
+export var stations = [
   {
     "id": 1,
     "estacion": "CASEROS",
@@ -7,13 +7,13 @@ var stations = [
   },
   {
     "id": 2,
-    "estacion": "INCLAN - MEZQUITA AL AHMAD",
+    "estacion": "INCLAN",
     "linea": "H",
     "coordinates": [-34.629375657572822, -58.400969556016499]
   },
   {
     "id": 3,
-    "estacion": "HUMBERTO 1°",
+    "estacion": "HUMBERTO I",
     "linea": "H",
     "coordinates": [-34.623092320501897, -58.402322730424025]
   },
@@ -25,7 +25,7 @@ var stations = [
   },
   {
     "id": 5,
-    "estacion": "ONCE - 30 DE DICIEMBRE",
+    "estacion": "ONCE",
     "linea": "H",
     "coordinates": [-34.608935241621545, -58.406036381035165]
   },
@@ -43,7 +43,7 @@ var stations = [
   },
   {
     "id": 8,
-    "estacion": "TRIBUNALES - TEATRO COLÓN",
+    "estacion": "TRIBUNALES",
     "linea": "D",
     "coordinates": [-34.601493, -58.384480]
   },
@@ -55,7 +55,7 @@ var stations = [
   },
   {
     "id": 10,
-    "estacion": "R.SCALABRINI ORTIZ",
+    "estacion": "SCALABRINI ORTIZ",
     "linea": "D",
     "coordinates": [-34.585155944049347, -58.415955419006657]
   },
@@ -121,7 +121,7 @@ var stations = [
   },
   {
     "id": 21,
-    "estacion": "C. PELLEGRINI",
+    "estacion": "CARLOS PELLEGRINI",
     "linea": "B",
     "coordinates": [-34.603637105181733, -58.380714847140887]
   },
@@ -133,13 +133,13 @@ var stations = [
   },
   {
     "id": 23,
-    "estacion": "CALLAO - MAESTRO ALFREDO BRAVO",
+    "estacion": "CALLAO",
     "linea": "B",
     "coordinates": [-34.604419542860782, -58.392314235088747]
   },
   {
     "id": 24,
-    "estacion": "PASTEUR - AMIA",
+    "estacion": "PASTEUR",
     "linea": "B",
     "coordinates": [-34.60464296791929, -58.399474256679021]
   },
@@ -157,7 +157,7 @@ var stations = [
   },
   {
     "id": 27,
-    "estacion": "ALMAGRO - MEDRANO",
+    "estacion": "MEDRANO",
     "linea": "B",
     "coordinates": [-34.603164901097252, -58.420962470270595]
   },
@@ -169,7 +169,7 @@ var stations = [
   },
   {
     "id": 29,
-    "estacion": "MALABIA - OSVALDO PUGLIESE",
+    "estacion": "MALABIA",
     "linea": "B",
     "coordinates": [-34.59896736415876, -58.439771498415517]
   },
@@ -205,7 +205,7 @@ var stations = [
   },
   {
     "id": 35,
-    "estacion": "CONGRESO - PDTE. DR. RAÚL R. ALFONSÍN",
+    "estacion": "CONGRESO",
     "linea": "A",
     "coordinates": [-34.609225684317408, -58.392668824664838]
   },
@@ -223,7 +223,7 @@ var stations = [
   },
   {
     "id": 38,
-    "estacion": "PLAZA DE MISERERE",
+    "estacion": "PLAZA MISERERE",
     "linea": "A",
     "coordinates": [-34.609817245670584, -58.406707116508805]
   },
@@ -283,7 +283,7 @@ var stations = [
   },
   {
     "id": 48,
-    "estacion": "ENTRE RIOS - RODOLFO WALSH",
+    "estacion": "ENTRE RIOS",
     "linea": "E",
     "coordinates": [-34.622719666127772, -58.391511699971502]
   },
@@ -301,7 +301,7 @@ var stations = [
   },
   {
     "id": 51,
-    "estacion": "URQUIZA",
+    "estacion": "GENERAL URQUIZA",
     "linea": "E",
     "coordinates": [-34.624653786466169, -58.409390783443627]
   },
@@ -337,7 +337,7 @@ var stations = [
   },
   {
     "id": 57,
-    "estacion": "SAN MARTIN",
+    "estacion": "GENERAL SAN MARTIN",
     "linea": "C",
     "coordinates": [-34.595319, -58.377421]
   },
@@ -367,7 +367,7 @@ var stations = [
   },
   {
     "id": 62,
-    "estacion": "MINISTRO CARRANZA - MIGUEL ABUELO",
+    "estacion": "MINISTRO CARRANZA",
     "linea": "D",
     "coordinates": [-34.575178364111288, -58.435013533733844]
   },
@@ -397,7 +397,7 @@ var stations = [
   },
   {
     "id": 67,
-    "estacion": "PLAZA DE LOS VIRREYES - EVA PERON",
+    "estacion": "PLAZA DE LOS VIRREYES",
     "linea": "E",
     "coordinates": [-34.642949, -58.461551]
   },
@@ -433,13 +433,13 @@ var stations = [
   },
   {
     "id": 73,
-    "estacion": "TRONADOR - VILLA ORTÚZAR",
+    "estacion": "TRONADOR",
     "linea": "B",
     "coordinates": [-34.58409462011609, -58.466227204692146]
   },
   {
     "id": 74,
-    "estacion": "DE LOS INCAS -PQUE. CHAS",
+    "estacion": "DE LOS INCAS",
     "linea": "B",
     "coordinates": [-34.581248845957909, -58.47424082617713]
   },
@@ -481,7 +481,7 @@ var stations = [
   },
   {
     "id": 81,
-    "estacion": "JUAN MANUEL DE ROSAS - VILLA URQUIZA",
+    "estacion": "JUAN MANUEL DE ROSAS",
     "linea": "B",
     "coordinates": [-34.574318914274834, -58.486385347889119]
   },
@@ -511,13 +511,13 @@ var stations = [
   },
   {
     "id": 86,
-    "estacion": "SANTA FE - CARLOS JAUREGUI",
+    "estacion": "SANTA FE",
     "linea": "H",
     "coordinates": [-34.595072, -58.402559]
   },
   {
     "id": 87,
-    "estacion": "FACULTAD DE DERECHO - JULIETA LANTERI",
+    "estacion": "FACULTAD DE DERECHO",
     "linea": "H",
     "coordinates": [-34.582972, -58.391207]
   },
@@ -541,13 +541,13 @@ var stations = [
   },
   {
     "id": 91,
-    "estacion": "Int. Saguier",
+    "estacion": "Intendente Saguier",
     "linea": "P",
     "coordinates": [-34.643211, -58.461623]
   },
   {
     "id": 92,
-    "estacion": "Balbastro (Cem. de Flores)",
+    "estacion": "Balbastro",
     "linea": "P",
     "coordinates": [-34.648832, -58.456256]
   },
@@ -565,7 +565,7 @@ var stations = [
   },
   {
     "id": 95,
-    "estacion": "Gral. Savio",
+    "estacion": "General Savio",
     "linea": "P",
     "coordinates": [-34.688804, -58.460205]
   },
@@ -613,37 +613,37 @@ var stations = [
   },
   {
     "id": 103,
-    "estacion": "Pte. Illia",
+    "estacion": "Presidente Illia",
     "linea": "P",
     "coordinates": [-34.665299, -58.448596]
   },
   {
     "id": 104,
-    "estacion": "Pque. de la Ciudad",
+    "estacion": "Parque de la Ciudad",
     "linea": "P",
     "coordinates": [-34.670223, -58.455505]
   },
   {
     "id": 105,
-    "estacion": "Gabino Ezeiza (Av. Cnel. Roca)",
+    "estacion": "Gabino Ezeiza",
     "linea": "P",
     "coordinates": [-34.685999, -58.458070]
   },
   {
     "id": 106,
-    "estacion": "Ctro. Cívico Lugano",
+    "estacion": "Centro Cívico Lugano",
     "linea": "P",
     "coordinates": [-34.683643, -58.465054]
   },
   {
     "id": 107,
-    "estacion": "Mariano Acosta (Bo. Carrillo)",
+    "estacion": "Mariano Acosta",
     "linea": "P",
     "coordinates": [-34.654401, -58.456578]
   },
   {
     "id": 108,
-    "estacion": "Ntra. Sra. de Fátima",
+    "estacion": "Nuestra Señora de Fátima",
     "linea": "P",
     "coordinates": [-34.660622, -58.448575]
   }
