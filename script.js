@@ -40,3 +40,24 @@ for (let station = 0; station < stations.length; station++) {
         L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
     }
 }
+
+var inputStation = document.getElementById("input")
+
+document.getElementById("input").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        var inputStation = document.getElementById("input").value.trim(); // Get input value and trim spaces
+        var found = false;
+        var i = 0;
+        while (!found && i < stations.length) {
+            if (stations[i].estacion.toLocaleUpperCase() === inputStation.toLocaleUpperCase()) {
+                found = true;
+                mapa.setView(stations[i].coordinates, 15);
+            } else {
+                i += 1;
+            }
+        }
+        if (!found) {
+            console.log("Esa estación no existe");
+        }
+    }
+});
