@@ -52,7 +52,9 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         while (!found && i < stations.length) {
             if (stations[i].estacion.toLocaleUpperCase() === inputStation.toLocaleUpperCase()) {
                 found = true;
+                icono = iconosPorLinea[stations[i].linea];
                 mapa.setView(stations[i].coordinates, 16);
+                L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
             } else {
                 i += 1;
             }
