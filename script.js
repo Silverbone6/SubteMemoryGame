@@ -20,6 +20,16 @@ const iconosPorLinea = {
     "P": icon_p
 };
 
+const foundIconosPorLinea = {
+    "A": found_icon_a,
+    "B": found_icon_b,
+    "C": found_icon_c,
+    "D": found_icon_d,
+    "E": found_icon_e,
+    "H": found_icon_h,
+    "P": found_icon_p
+};
+
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
@@ -46,15 +56,15 @@ var inputStation = document.getElementById("input")
 
 document.getElementById("input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-        var inputStation = document.getElementById("input").value.trim(); // Get input value and trim spaces
+        var inputStation = document.getElementById("input").value.trim()
         var found = false;
         var i = 0;
         while (!found && i < stations.length) {
             if (stations[i].estacion.toLocaleUpperCase() === inputStation.toLocaleUpperCase()) {
                 found = true;
-                icono = iconosPorLinea[stations[i].linea];
+                icono = foundIconosPorLinea[stations[i].linea];
                 mapa.setView(stations[i].coordinates, 16);
-                L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
+                L.marker(stations[i].coordinates, { icon: icono }).addTo(mapa);
             } else {
                 i += 1;
             }
