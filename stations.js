@@ -1,4 +1,4 @@
-export var stations = [
+var stations = [
   {
     "id": 1,
     "estacion": "CASEROS",
