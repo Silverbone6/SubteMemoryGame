@@ -7,16 +7,34 @@ body {
 
 #mapa {
     height: 100vh;
-    width: 100%;
+    width: 80%;
+    float: left;
 }
 
-#menu {
+#sidebar {
+    width: 20%;
+    height: 100vh;
+    float: right;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #fff;
+    padding: 2vh 1vw;
+    font-size: 2vh;
+}
+
+#lista img {
+    height: 1.5vh;
+    margin-right: 1vh;
+}
+
+#opciones {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     top: 5%;
-    left: 40%;
+    left: 10%;
+    right: 30%;
     z-index: 1000;
 }
 
@@ -40,7 +58,7 @@ body {
     border-width: 0.4vh;
 }
 
-#opciones {
+#boton {
     background-color: white;
     border-color: rgba(0, 0, 0, 0);
     border-width: 0.4vh;
