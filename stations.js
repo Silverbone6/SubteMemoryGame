@@ -73,7 +73,7 @@ var stations = [
   },
   {
     "id": 13,
-    "estacion": "RETIRO",
+    "estacion": "RETIRO - C",
     "linea": "C",
     "coordinates": [-34.591186, -58.374267]
   },
@@ -103,7 +103,7 @@ var stations = [
   },
   {
     "id": 18,
-    "estacion": "INDEPENDENCIA",
+    "estacion": "INDEPENDENCIA - C",
     "linea": "C",
     "coordinates": [-34.6181255992933, -58.380173610475246]
   },
@@ -133,7 +133,7 @@ var stations = [
   },
   {
     "id": 23,
-    "estacion": "CALLAO",
+    "estacion": "CALLAO - B",
     "linea": "B",
     "coordinates": [-34.604419542860782, -58.392314235088747]
   },
@@ -145,7 +145,7 @@ var stations = [
   },
   {
     "id": 25,
-    "estacion": "PUEYRREDON",
+    "estacion": "PUEYRREDON - B",
     "linea": "B",
     "coordinates": [-34.604581055351218, -58.405399439843379]
   },
@@ -271,7 +271,7 @@ var stations = [
   },
   {
     "id": 46,
-    "estacion": "INDEPENDENCIA",
+    "estacion": "INDEPENDENCIA - E ",
     "linea": "E",
     "coordinates": [-34.617937393977151, -58.381534941712232]
   },
@@ -325,13 +325,13 @@ var stations = [
   },
   {
     "id": 55,
-    "estacion": "PUEYRREDON",
+    "estacion": "PUEYRREDON - D",
     "linea": "D",
     "coordinates": [-34.594425718628472, -58.402395342535065]
   },
   {
     "id": 56,
-    "estacion": "CALLAO",
+    "estacion": "CALLAO - D",
     "linea": "D",
     "coordinates": [-34.599639552419006, -58.393125180972717]
   },
@@ -535,115 +535,115 @@ var stations = [
   },
   {
     "id": 90,
-    "estacion": "RETIRO",
+    "estacion": "RETIRO - E",
     "linea": "E",
     "coordinates": [-34.592431, -58.375683]
   },
   {
     "id": 91,
-    "estacion": "Intendente Saguier",
+    "estacion": "INTENDENTE SAGUIER",
     "linea": "P",
     "coordinates": [-34.643211, -58.461623]
   },
   {
     "id": 92,
-    "estacion": "Balbastro",
+    "estacion": "BALBASTRO",
     "linea": "P",
     "coordinates": [-34.648832, -58.456256]
   },
   {
     "id": 93,
-    "estacion": "Ana María Janer",
+    "estacion": "ANA MARÍA JANER",
     "linea": "P",
     "coordinates": [-34.659458, -58.450034]
   },
   {
     "id": 94,
-    "estacion": "Escalada",
+    "estacion": "ESCALADA",
     "linea": "P",
     "coordinates": [-34.674300, -58.459851]
   },
   {
     "id": 95,
-    "estacion": "General Savio",
+    "estacion": "GENERAL SAVIO",
     "linea": "P",
     "coordinates": [-34.688804, -58.460205]
   },
   {
     "id": 96,
-    "estacion": "Cecilia Grierson",
+    "estacion": "CECILIA GRIERSON",
     "linea": "P",
     "coordinates": [-34.672217, -58.457565]
   },
   {
     "id": 97,
-    "estacion": "Nicolás Descalzi",
+    "estacion": "NICOLÁS DESCALZI",
     "linea": "P",
     "coordinates": [-34.682726, -58.462447]
   },
   {
     "id": 98,
-    "estacion": "Larrazábal",
+    "estacion": "LARRAZÁBAL",
     "linea": "P",
     "coordinates": [-34.680591, -58.465376]
   },
   {
     "id": 99,
-    "estacion": "Ana Díaz",
+    "estacion": "ANA DÍAZ",
     "linea": "P",
     "coordinates": [-34.680529, -58.466738]
   },
   {
     "id": 100,
-    "estacion": "Somellera",
+    "estacion": "SOMELLERA",
     "linea": "P",
     "coordinates": [-34.656581, -58.453767]
   },
   {
     "id": 101,
-    "estacion": "Pola",
+    "estacion": "POLA",
     "linea": "P",
     "coordinates": [-34.678050, -58.464410]
   },
   {
     "id": 102,
-    "estacion": "Fernández de la Cruz",
+    "estacion": "FERNÁNDEZ DE LA CRUZ",
     "linea": "P",
     "coordinates": [-34.662229, -58.446665]
   },
   {
     "id": 103,
-    "estacion": "Presidente Illia",
+    "estacion": "PRESIDENTE ILLIA",
     "linea": "P",
     "coordinates": [-34.665299, -58.448596]
   },
   {
     "id": 104,
-    "estacion": "Parque de la Ciudad",
+    "estacion": "PARQUE DE LA CIUDAD",
     "linea": "P",
     "coordinates": [-34.670223, -58.455505]
   },
   {
     "id": 105,
-    "estacion": "Gabino Ezeiza",
+    "estacion": "GABINO EZEIZA",
     "linea": "P",
     "coordinates": [-34.685999, -58.458070]
   },
   {
     "id": 106,
-    "estacion": "Centro Cívico Lugano",
+    "estacion": "CENTRO CÍVICO LUGANO",
     "linea": "P",
     "coordinates": [-34.683643, -58.465054]
   },
   {
     "id": 107,
-    "estacion": "Mariano Acosta",
+    "estacion": "MARIANO ACOSTA",
     "linea": "P",
     "coordinates": [-34.654401, -58.456578]
   },
   {
     "id": 108,
-    "estacion": "Nuestra Señora de Fátima",
+    "estacion": "NUESTRA SEÑORA DE FÁTIMA",
     "linea": "P",
     "coordinates": [-34.660622, -58.448575]
   }
