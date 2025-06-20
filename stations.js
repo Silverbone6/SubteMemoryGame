@@ -73,7 +73,7 @@ var stations = [
   },
   {
     "id": 13,
-    "estacion": "RETIRO - C",
+    "estacion": "RETIRO C",
     "linea": "C",
     "coordinates": [-34.591186, -58.374267]
   },
@@ -103,7 +103,7 @@ var stations = [
   },
   {
     "id": 18,
-    "estacion": "INDEPENDENCIA - C",
+    "estacion": "INDEPENDENCIA C",
     "linea": "C",
     "coordinates": [-34.6181255992933, -58.380173610475246]
   },
@@ -133,7 +133,7 @@ var stations = [
   },
   {
     "id": 23,
-    "estacion": "CALLAO - B",
+    "estacion": "CALLAO B",
     "linea": "B",
     "coordinates": [-34.604419542860782, -58.392314235088747]
   },
@@ -145,7 +145,7 @@ var stations = [
   },
   {
     "id": 25,
-    "estacion": "PUEYRREDON - B",
+    "estacion": "PUEYRREDON B",
     "linea": "B",
     "coordinates": [-34.604581055351218, -58.405399439843379]
   },
@@ -271,7 +271,7 @@ var stations = [
   },
   {
     "id": 46,
-    "estacion": "INDEPENDENCIA - E ",
+    "estacion": "INDEPENDENCIA E",
     "linea": "E",
     "coordinates": [-34.617937393977151, -58.381534941712232]
   },
@@ -325,13 +325,13 @@ var stations = [
   },
   {
     "id": 55,
-    "estacion": "PUEYRREDON - D",
+    "estacion": "PUEYRREDON D",
     "linea": "D",
     "coordinates": [-34.594425718628472, -58.402395342535065]
   },
   {
     "id": 56,
-    "estacion": "CALLAO - D",
+    "estacion": "CALLAO D",
     "linea": "D",
     "coordinates": [-34.599639552419006, -58.393125180972717]
   },
@@ -535,7 +535,7 @@ var stations = [
   },
   {
     "id": 90,
-    "estacion": "RETIRO - E",
+    "estacion": "RETIRO E",
     "linea": "E",
     "coordinates": [-34.592431, -58.375683]
   },
