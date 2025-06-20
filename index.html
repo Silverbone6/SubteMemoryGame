@@ -21,11 +21,29 @@
                 <button type="button" id="boton"></button>
             </div>
         </div>
+        <style>
+            body {
+                font-family: 'Helvetica', sans-serif;
+                font-weight: bold;
+            }
+        </style>
         <div id="sidebar">
             <div id="progressbar"></div>
             <div id="lista">
             </div>
         </div>
+        <div id="popup" style="display:block; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%); background:white; border:3px solid #055b83; padding:20px; z-index:1000;">
+            <button id="cerrar-popup" style="float:right;">&times;</button>
+            <div>
+                Hola! bienvenid@ al juego de memoria del Subte de Buenos Aires. Para empezar, escribí una estación en el campo de texto y presioná enter. El juego te mostrará la ubicación de la estación en el mapa y te permitirá adivinar el resto de estaciones. ¡Divertite!
+            </div>
+        </div>
+
+        <script>
+        document.getElementById('cerrar-popup').onclick = function() {
+            document.getElementById('popup').style.display = 'none';
+        };
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
