@@ -20,8 +20,15 @@
             <div>
                 <input placeholder="Estación" id="input">
             </div>
-            <div>
-                <button type="button" id="boton"></button>
+            <div class="menu-container">
+                <button type="button" id="boton" class="menu-btn">⋮</button>
+                <div id="menu-opciones" class="menu-opciones">
+                    <div class="menu-item"><a href="https://github.com/Silverbone6/SubteMemoryGame">GitHub</a></div>
+                    <div class="menu-item"><a href="https://london.metro-memory.com/">Inspiración</a></div>
+                    <div class="menu-item" id="abrir-popup">Instrucciones</div>
+                    <script>
+                    </script>
+                </div>
             </div>
         </div>
         <div id="sidebar">
@@ -65,7 +72,7 @@
         <div id="popup">
             <button id="cerrar-popup">&times;</button>
             <div>
-                Hola! bienvenid@ al juego de memoria del Subte de Buenos Aires. Para empezar, escribí una estación en el campo de texto y presioná enter. El juego te mostrará la ubicación de la estación en el mapa y te permitirá adivinar el resto de estaciones. ¡Divertite!
+                Hola! bienvenid@ al juego de memoria del Subte de Buenos Aires. Para empezar, escribí una estación en el campo de texto y presioná enter. El juego te mostrará la ubicación de la estación en el mapa y te permitirá adivinar el resto de estaciones. Ninguna estación lleva tilde. No importan las mayúsculas o minúsculas. Las estaciones tienen sus nombres originales sin ningún agregado (Ejemplo: "Pasteur - AMIA" es "Pasteur"). Todas las palabras se escriben completas (Ejemplo: "General San Martín", "Juan Manuel de Rosas"). La única excepción es "Leando N Alem" sin punto. Las estaciones duplicadas llevan la letra de la línea (Ejemplo: "Pueyrredón D" "Pueyrredón B", etc) ¡Divertite!
             </div>
         </div>
 

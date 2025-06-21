@@ -108,6 +108,40 @@ body {
     z-index: 1000;
 }
 
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    font-size: 2.5vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 2vh;
+}
+
+.menu-opciones {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    right: 0;
+    z-index: 100;
+    min-width: 120px;
+}
+
+.menu-item {
+    padding: 1vh 2vh;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu-item:hover {
+    background: #f0f0f0;
+}
+
 #input {
     background-color: white;
     border-color: rgba(0, 0, 0, 0);

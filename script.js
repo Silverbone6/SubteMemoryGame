@@ -140,3 +140,17 @@ document.getElementById('toggle-lineprogress').onclick = function() {
     var lista = document.getElementById('lista')
     lista.classList.toggle('short')
 }
+
+// --- BOTON MENU ---
+document.getElementById('boton').onclick = function(e) {
+    e.stopPropagation()
+    var menu = document.getElementById('menu-opciones')
+    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none'
+}
+document.addEventListener('click', function() {
+    document.getElementById('menu-opciones').style.display = 'none'
+})
+
+document.getElementById('abrir-popup').onclick = function() {
+    document.getElementById('popup').style.display = 'block';
+};
