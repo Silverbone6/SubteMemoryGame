@@ -2,22 +2,144 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 #mapa {
     height: 100vh;
-    width: 100%;
+    width: 80%;
+    float: left;
 }
 
-#menu {
+#sidebar {
+    width: 20%;
+    height: 100vh;
+    float: right;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #fff;
+    font-size: 2vh;
+    padding-left: 2.5vh;
+}
+
+#progressbar {
+    font-weight: bold;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#progress {
+    font-size: 4vh;
+}
+
+#toggle-lineprogress {
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 1vh;
+}
+
+#toggle-lineprogress.active {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+#lineprogress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh; /* space between each icon+fraction group */
+    transition: max-height 0.3s ease;
+    font-weight: thin;
+    font-size: 3vh;
+}
+
+#lineprogress.show {
+    display: block;
+}
+
+#lineprogress {
+    display: none;
+}
+
+#lineprogress > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+#lineprogress img{
+    height: 4vh;
+    margin-right: 1vh;
+}
+
+#lista {
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+}
+
+#lista.short {
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+}
+
+#lista img {
+    height: 1.5vh;
+    margin-right: 1vh;
+}
+
+#opciones {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     top: 5%;
-    left: 40%;
+    left: 10%;
+    right: 30%;
     z-index: 1000;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    font-size: 2.5vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 2vh;
+}
+
+.menu-opciones {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    right: 0;
+    z-index: 100;
+    min-width: 120px;
+}
+
+.menu-item {
+    padding: 1vh 2vh;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu-item:hover {
+    background: #f0f0f0;
 }
 
 #input {
@@ -26,11 +148,11 @@ body {
     border-width: 0.4vh;
     font-weight: bold;
     width: 15vw;
-    font-size: 3vh;
+    font-size: 2vh;
     border-radius: 3vh;
     padding-left: 2vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     margin-right: 2vh;
     outline: none;
 }
@@ -40,7 +162,7 @@ body {
     border-width: 0.4vh;
 }
 
-#opciones {
+#boton {
     background-color: white;
     border-color: rgba(0, 0, 0, 0);
     border-width: 0.4vh;
@@ -57,4 +179,21 @@ body {
 #opciones::selection {
     border-color: rgba(0, 0, 0, 1);
     border-width: 0.4vh;
+}
+
+#popup {
+    font-weight: bold;
+    display:block; 
+    position:fixed; 
+    top:30%; 
+    left:40%; 
+    transform:translate(-50%, -50%); 
+    background:white; 
+    border:3px solid #055b83; 
+    padding:20px; 
+    z-index:1000;
+}
+
+#cerrar-popup {
+    float:right;
 }

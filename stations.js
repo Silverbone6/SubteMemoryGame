@@ -91,7 +91,7 @@ var stations = [
   },
   {
     "id": 16,
-    "estacion": "AV. DE MAYO",
+    "estacion": "AVENIDA DE MAYO",
     "linea": "C",
     "coordinates": [-34.608983314882707, -58.380610717957907]
   },
@@ -355,7 +355,7 @@ var stations = [
   },
   {
     "id": 60,
-    "estacion": "AV. LA PLATA",
+    "estacion": "AVENIDA LA PLATA",
     "linea": "E",
     "coordinates": [-34.627015467001989, -58.426789022897211]
   },
@@ -427,7 +427,7 @@ var stations = [
   },
   {
     "id": 72,
-    "estacion": "LEANDRO N. ALEM",
+    "estacion": "LEANDRO N ALEM",
     "linea": "B",
     "coordinates": [-34.602989496633242, -58.369929850122439]
   },
