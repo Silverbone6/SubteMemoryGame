@@ -3,7 +3,7 @@ var mapa = L.map('mapa').setView([-34.6037, -58.3816], 13);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-    minZoom: 13,
+    minZoom: 12,
     maxZoom: 18,
 }).addTo(mapa);      
 
@@ -46,6 +46,16 @@ for (let station = 0; station < stations.length; station++) {
     if (icono) {
         L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa);
     }
+}
+
+// --- FUNCIONES ---
+function capitalizeFirstLetter(str) {
+    return str.split(' ').map(word =>
+        word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    ).join(' ');
+}
+function centerToStation(lat, lng) {
+    mapa.setView([lat, lng], 16);
 }
 
 // --- ESTACIONES ENCONTRADAS ---
@@ -101,31 +111,13 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         // ---  ACTUALIZAR EL LISTADO DE ESTACIONES ---
         document.getElementById("lista").innerHTML = ""
         for (var key in foundStations) {
+            const estacion = foundStations[key];
             document.getElementById("lista").innerHTML +=
-                '<div><img src="' + iconosUrlPorLinea[foundStations[key].linea] + '" alt="Icono Linea">'
-                + foundStations[key].estacion + '</div>'
-            if (foundStations[key].linea === "A") {
-                foundLineaA += 1
-            }
-            if (foundStations[key].linea === "B") {
-                foundLineaB += 1
-            }
-            if (foundStations[key].linea === "C") {
-                foundLineaC += 1
-            }
-            if (foundStations[key].linea === "D") {
-                foundLineaD += 1
-            }
-            if (foundStations[key].linea === "E") {
-                foundLineaE += 1
-            }
-            if (foundStations[key].linea === "H") {
-                foundLineaH += 1
-            }
-            if (foundStations[key].linea === "P") {
-                foundLineaP += 1
-            }
-            key +=1
+                `<div style="cursor:pointer"
+                    onclick="centerToStation(${estacion.coordinates[0]}, ${estacion.coordinates[1]})">
+                    <img src="${iconosUrlPorLinea[estacion.linea]}" alt="Icono Linea">
+                    ${capitalizeFirstLetter(estacion.estacion)}
+                </div>`;
         }
         // ---  ACTUALIZAR EL PROGRESO DE LINEAS ---
         document.getElementById("progress-a").innerHTML = (foundLineaA) + " / 17"
@@ -135,12 +127,16 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         document.getElementById("progress-e").innerHTML = (foundLineaE) + " / 15"
         document.getElementById("progress-h").innerHTML = (foundLineaH) + " / 12"
         document.getElementById("progress-p").innerHTML = (foundLineaP) + " / 18"
+        // --- SELECCIONAR INPUT ---
+        document.getElementById("input").select()
     }
 });
 
-// --- MOSTRAR/OCULTAR PROGRESO DE LAS LÍNEAS ---
+// --- BOTON: MOSTRAR/OCULTAR PROGRESO DE LAS LÍNEAS ---
 document.getElementById('toggle-lineprogress').onclick = function() {
     var lp = document.getElementById('lineprogress')
     this.classList.toggle('active')
     lp.classList.toggle('show')
+    var lista = document.getElementById('lista')
+    lista.classList.toggle('short')
 }

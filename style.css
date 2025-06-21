@@ -80,6 +80,18 @@ body {
     margin-right: 1vh;
 }
 
+#lista {
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+}
+
+#lista.short {
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+}
+
 #lista img {
     height: 1.5vh;
     margin-right: 1vh;

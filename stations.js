@@ -91,7 +91,7 @@ var stations = [
   },
   {
     "id": 16,
-    "estacion": "AV. DE MAYO",
+    "estacion": "AVENIDA DE MAYO",
     "linea": "C",
     "coordinates": [-34.608983314882707, -58.380610717957907]
   },
@@ -355,7 +355,7 @@ var stations = [
   },
   {
     "id": 60,
-    "estacion": "AV. LA PLATA",
+    "estacion": "AVENIDA LA PLATA",
     "linea": "E",
     "coordinates": [-34.627015467001989, -58.426789022897211]
   },
@@ -427,7 +427,7 @@ var stations = [
   },
   {
     "id": 72,
-    "estacion": "LEANDRO N. ALEM",
+    "estacion": "LEANDRO N ALEM",
     "linea": "B",
     "coordinates": [-34.602989496633242, -58.369929850122439]
   },
@@ -475,7 +475,7 @@ var stations = [
   },
   {
     "id": 80,
-    "estacion": "ECHEVERRÍA",
+    "estacion": "ECHEVERRIA",
     "linea": "B",
     "coordinates": [-34.577797377542254, -58.481013503672052]
   },
@@ -487,7 +487,7 @@ var stations = [
   },
   {
     "id": 82,
-    "estacion": "SAN JOSÉ DE FLORES",
+    "estacion": "SAN JOSE DE FLORES",
     "linea": "A",
     "coordinates": [-34.629087226797033, -58.463540510628647]
   },
@@ -499,7 +499,7 @@ var stations = [
   },
   {
     "id": 84,
-    "estacion": "CÓRDOBA",
+    "estacion": "CORDOBA",
     "linea": "H",
     "coordinates": [-34.598455111773411, -58.403721496438735]
   },
@@ -577,19 +577,19 @@ var stations = [
   },
   {
     "id": 97,
-    "estacion": "NICOLÁS DESCALZI",
+    "estacion": "NICOLAS DESCALZI",
     "linea": "P",
     "coordinates": [-34.682726, -58.462447]
   },
   {
     "id": 98,
-    "estacion": "LARRAZÁBAL",
+    "estacion": "LARRAZABAL",
     "linea": "P",
     "coordinates": [-34.680591, -58.465376]
   },
   {
     "id": 99,
-    "estacion": "ANA DÍAZ",
+    "estacion": "ANA DIAZ",
     "linea": "P",
     "coordinates": [-34.680529, -58.466738]
   },
@@ -607,7 +607,7 @@ var stations = [
   },
   {
     "id": 102,
-    "estacion": "FERNÁNDEZ DE LA CRUZ",
+    "estacion": "FERNANDEZ DE LA CRUZ",
     "linea": "P",
     "coordinates": [-34.662229, -58.446665]
   },
@@ -631,7 +631,7 @@ var stations = [
   },
   {
     "id": 106,
-    "estacion": "CENTRO CÍVICO LUGANO",
+    "estacion": "CENTRO CIVICO LUGANO",
     "linea": "P",
     "coordinates": [-34.683643, -58.465054]
   },
@@ -643,7 +643,7 @@ var stations = [
   },
   {
     "id": 108,
-    "estacion": "NUESTRA SEÑORA DE FÁTIMA",
+    "estacion": "NUESTRA SEÑORA DE FATIMA",
     "linea": "P",
     "coordinates": [-34.660622, -58.448575]
   }
