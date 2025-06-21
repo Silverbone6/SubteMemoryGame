@@ -66,6 +66,13 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         var inputStation = document.getElementById("input").value.trim()
         var found = false
         station = 0
+        var foundLineaA = 0
+        var foundLineaB = 0
+        var foundLineaC = 0
+        var foundLineaD = 0
+        var foundLineaE = 0
+        var foundLineaH = 0
+        var foundLineaP = 0
         while (!found && station < stations.length) {
             if (stations[station].estacion === inputStation.toLocaleUpperCase()) {
                 // --- SI LA ESTACIÓN EXISTE ---
@@ -88,17 +95,52 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         if (!found) {
             console.log("Esa estación no existe");
         }
-        // ---  ACTUALIZAR EL LISTADO DE ESTACIONES ---
+        // ---  ACTUALIZAR EL PORCENTAJE DE ESTACIONES ---
         var progreso = Object.keys(foundStations).length / stations.length * 100
-        document.getElementById("progressbar").innerHTML =
-            (progreso.toFixed(2)) + '% de estaciones encontradas'
+        document.getElementById("progress").innerHTML = (progreso.toFixed(2)) + "%"
+        // ---  ACTUALIZAR EL LISTADO DE ESTACIONES ---
         document.getElementById("lista").innerHTML = ""
         for (var key in foundStations) {
             document.getElementById("lista").innerHTML +=
                 '<div><img src="' + iconosUrlPorLinea[foundStations[key].linea] + '" alt="Icono Linea">'
                 + foundStations[key].estacion + '</div>'
+            if (foundStations[key].linea === "A") {
+                foundLineaA += 1
+            }
+            if (foundStations[key].linea === "B") {
+                foundLineaB += 1
+            }
+            if (foundStations[key].linea === "C") {
+                foundLineaC += 1
+            }
+            if (foundStations[key].linea === "D") {
+                foundLineaD += 1
+            }
+            if (foundStations[key].linea === "E") {
+                foundLineaE += 1
+            }
+            if (foundStations[key].linea === "H") {
+                foundLineaH += 1
+            }
+            if (foundStations[key].linea === "P") {
+                foundLineaP += 1
+            }
             key +=1
         }
+        // ---  ACTUALIZAR EL PROGRESO DE LINEAS ---
+        document.getElementById("progress-a").innerHTML = (foundLineaA) + " / 17"
+        document.getElementById("progress-b").innerHTML = (foundLineaB) + " / 17"
+        document.getElementById("progress-c").innerHTML = (foundLineaC) + " / 9"
+        document.getElementById("progress-d").innerHTML = (foundLineaD) + " / 16"
+        document.getElementById("progress-e").innerHTML = (foundLineaE) + " / 15"
+        document.getElementById("progress-h").innerHTML = (foundLineaH) + " / 12"
+        document.getElementById("progress-p").innerHTML = (foundLineaP) + " / 18"
     }
 });
 
+// --- MOSTRAR/OCULTAR PROGRESO DE LAS LÍNEAS ---
+document.getElementById('toggle-lineprogress').onclick = function() {
+    var lp = document.getElementById('lineprogress')
+    this.classList.toggle('active')
+    lp.classList.toggle('show')
+}

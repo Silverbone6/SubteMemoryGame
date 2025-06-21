@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 #mapa {
@@ -18,8 +18,66 @@ body {
     box-sizing: border-box;
     overflow-y: auto;
     background: #fff;
-    padding: 2vh 1vw;
     font-size: 2vh;
+    padding-left: 2.5vh;
+}
+
+#progressbar {
+    font-weight: bold;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#progress {
+    font-size: 4vh;
+}
+
+#toggle-lineprogress {
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 1vh;
+}
+
+#toggle-lineprogress.active {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+#lineprogress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh; /* space between each icon+fraction group */
+    transition: max-height 0.3s ease;
+    font-weight: thin;
+    font-size: 3vh;
+}
+
+#lineprogress.show {
+    display: block;
+}
+
+#lineprogress {
+    display: none;
+}
+
+#lineprogress > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+#lineprogress img{
+    height: 4vh;
+    margin-right: 1vh;
 }
 
 #lista img {
@@ -44,11 +102,11 @@ body {
     border-width: 0.4vh;
     font-weight: bold;
     width: 15vw;
-    font-size: 3vh;
+    font-size: 2vh;
     border-radius: 3vh;
     padding-left: 2vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     margin-right: 2vh;
     outline: none;
 }
@@ -75,4 +133,21 @@ body {
 #opciones::selection {
     border-color: rgba(0, 0, 0, 1);
     border-width: 0.4vh;
+}
+
+#popup {
+    font-weight: bold;
+    display:block; 
+    position:fixed; 
+    top:30%; 
+    left:40%; 
+    transform:translate(-50%, -50%); 
+    background:white; 
+    border:3px solid #055b83; 
+    padding:20px; 
+    z-index:1000;
+}
+
+#cerrar-popup {
+    float:right;
 }

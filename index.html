@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SubteMemoryGame</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <link rel="stylesheet" href="style.css">
@@ -21,19 +24,47 @@
                 <button type="button" id="boton"></button>
             </div>
         </div>
-        <style>
-            body {
-                font-family: 'Helvetica', sans-serif;
-                font-weight: bold;
-            }
-        </style>
         <div id="sidebar">
-            <div id="progressbar"></div>
+            <div id="progressbar">
+                <div id="progress">0.00%</div>
+                del Subte encontrado
+            </div>
+            <button id="toggle-lineprogress">Ver progreso por línea</button>
+            <div id="lineprogress">
+                <div>
+                    <img src="src\bullet_linea_a.svg" alt="linea_a">
+                    <div id="progress-a">0 / 17</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_b.svg" alt="linea_b">
+                    <div id="progress-b">0 / 17</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_c.svg" alt="linea_c">
+                    <div id="progress-c">0 / 9</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_d.svg" alt="linea_d">
+                    <div id="progress-d">0 / 16</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_e.svg" alt="linea_e">
+                    <div id="progress-e">0 / 15</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_h.svg" alt="linea_h">
+                    <div id="progress-h">0 / 12</div>
+                </div>
+                <div>
+                    <img src="src\bullet_linea_p.svg" alt="linea_p">
+                    <div id="progress-p">0 / 18</div>
+                </div>
+            </div>
             <div id="lista">
             </div>
         </div>
-        <div id="popup" style="display:block; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%); background:white; border:3px solid #055b83; padding:20px; z-index:1000;">
-            <button id="cerrar-popup" style="float:right;">&times;</button>
+        <div id="popup">
+            <button id="cerrar-popup">&times;</button>
             <div>
                 Hola! bienvenid@ al juego de memoria del Subte de Buenos Aires. Para empezar, escribí una estación en el campo de texto y presioná enter. El juego te mostrará la ubicación de la estación en el mapa y te permitirá adivinar el resto de estaciones. ¡Divertite!
             </div>
