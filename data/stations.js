@@ -49,7 +49,7 @@ const estaciones = [
   },
   {
     "id": 9,
-    "estacion": "AGÜERO",
+    "estacion": "AGUERO",
     "linea": "D",
     "coordinates": [-34.591627843719891, -58.40716132018985]
   },
