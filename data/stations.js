@@ -1,4 +1,4 @@
-var stations = [
+const estaciones = [
   {
     "id": 1,
     "estacion": "CASEROS",
