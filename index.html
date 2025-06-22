@@ -10,9 +10,6 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <link rel="stylesheet" href="style.css">
-        <script src="lines.js"></script>
-        <script src="icons.js"></script>
-        <script src="stations.js"></script>
     </head>
     <body>
         <div id="mapa"></div>
@@ -40,31 +37,31 @@
             <button id="toggle-lineprogress">Ver progreso por línea</button>
             <div id="lineprogress">
                 <div>
-                    <img src="src\bullet_linea_a.svg" alt="linea_a">
+                    <img src="svgs\bullet_linea_a.svg" alt="linea_a">
                     <div id="progress-a">0 / 17</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_b.svg" alt="linea_b">
+                    <img src="svgs\bullet_linea_b.svg" alt="linea_b">
                     <div id="progress-b">0 / 17</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_c.svg" alt="linea_c">
+                    <img src="svgs\bullet_linea_c.svg" alt="linea_c">
                     <div id="progress-c">0 / 9</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_d.svg" alt="linea_d">
+                    <img src="svgs\bullet_linea_d.svg" alt="linea_d">
                     <div id="progress-d">0 / 16</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_e.svg" alt="linea_e">
+                    <img src="svgs\bullet_linea_e.svg" alt="linea_e">
                     <div id="progress-e">0 / 15</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_h.svg" alt="linea_h">
+                    <img src="svgs\bullet_linea_h.svg" alt="linea_h">
                     <div id="progress-h">0 / 12</div>
                 </div>
                 <div>
-                    <img src="src\bullet_linea_p.svg" alt="linea_p">
+                    <img src="svgs\bullet_linea_p.svg" alt="linea_p">
                     <div id="progress-p">0 / 18</div>
                 </div>
             </div>
@@ -83,6 +80,12 @@
                 <br>¡Esperamos que te diviertas!
             </div>
         </div>
+        <script src="./data/lines.js"></script>
+        <script src="./data/icons.js"></script>
+        <script src="./data/stations.js"></script>
+        <script src="./src/worldBuilder.js"></script>
+        <script src="./src/cron.js"></script>
+        <script src="./src/game.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
