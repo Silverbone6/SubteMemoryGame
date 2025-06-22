@@ -75,7 +75,7 @@ function jugar (event) {
                 </div>`;
         }
         // ---  ACTUALIZAR EL PROGRESO DE LINEAS ---
-        document.getElementById("progress-a").innerHTML = (foundLineaA) + " / 17"
+        document.getElementById("progress-a").innerHTML = (foundLineaA) + " / 18"
         document.getElementById("progress-b").innerHTML = (foundLineaB) + " / 17"
         document.getElementById("progress-c").innerHTML = (foundLineaC) + " / 9"
         document.getElementById("progress-d").innerHTML = (foundLineaD) + " / 16"
@@ -85,8 +85,7 @@ function jugar (event) {
         // --- SELECCIONAR INPUT ---
         document.getElementById("input").select()
         // --- CRONOMETRO ---
-        if (foundStations.length === estaciones.length) {
-            /// CRONOMETRO FINISH
+        if (progreso === 100) {
             stopCronometro()
         }
     }

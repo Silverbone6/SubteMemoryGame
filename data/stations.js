@@ -553,7 +553,7 @@ const estaciones = [
   },
   {
     "id": 93,
-    "estacion": "ANA MARÍA JANER",
+    "estacion": "ANA MARIA JANER",
     "linea": "P",
     "coordinates": [-34.659458, -58.450034]
   },
