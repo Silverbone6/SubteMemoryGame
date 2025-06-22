@@ -13,7 +13,7 @@ var stations = [
   },
   {
     "id": 3,
-    "estacion": "HUMBERTO 1°",
+    "estacion": "HUMBERTO I",
     "linea": "H",
     "coordinates": [-34.623092320501897, -58.402322730424025]
   },
