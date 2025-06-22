@@ -11,6 +11,22 @@ body {
     float: left;
 }
 
+#cronometro {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0.4vh;
+    font-weight: bold;
+    width: auto;
+    font-size: 2vh;
+    border-radius: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    margin-right: 2vh;
+    outline: none;
+}
+
 #sidebar {
     width: 20%;
     height: 100vh;

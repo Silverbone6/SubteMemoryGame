@@ -57,6 +57,21 @@ function capitalizeFirstLetter(str) {
 function centerToStation(lat, lng) {
     mapa.setView([lat, lng], 16);
 }
+let cronometroInterval
+let segundos = 0
+function startCronometro() {
+    if (cronometroInterval) return
+    cronometroInterval = setInterval(() => {
+        segundos++
+        document.getElementById("cronometro").innerText = 
+            String(Math.floor(segundos / 60)).padStart(2, '0') + ":" +
+            String(segundos % 60).padStart(2, '0')
+    }, 1000)
+}
+function stopCronometro() {
+    clearInterval(cronometroInterval)
+    cronometroInterval = null
+}
 
 // --- ESTACIONES ENCONTRADAS ---
 const foundIconosPorLinea = {
@@ -73,6 +88,7 @@ var inputStation = document.getElementById("input")
 var lista_cont = 0
 document.getElementById("input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
+        startCronometro()
         var inputStation = document.getElementById("input").value.trim()
         var found = false
         station = 0
@@ -86,17 +102,28 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         while (!found && station < stations.length) {
             if (stations[station].estacion === inputStation.toLocaleUpperCase()) {
                 // --- SI LA ESTACIÓN EXISTE ---
-                found = true
-                icono = foundIconosPorLinea[stations[station].linea]
-                mapa.setView(stations[station].coordinates, 16)
-                L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa)
-                foundStations[lista_cont] = {
+                // --- BUSCAR SI YA SE ENCONTRÓ ---
+                var yaExiste = false;
+                for (var key in foundStations) {
+                    if (stations[station].estacion === foundStations[key].estacion) {
+                        yaExiste = true;
+                        break;
+                    }
+                }   
+                if (!yaExiste) {
+                    found = true
+                    icono = foundIconosPorLinea[stations[station].linea]
+                    mapa.setView(stations[station].coordinates, 16)
+                    L.marker(stations[station].coordinates, { icon: icono }).addTo(mapa)
+                    foundStations[lista_cont] = {
                     "id": (lista_cont + 1),
                     "estacion": stations[station].estacion,
                     "linea": stations[station].linea,
                     "coordinates": stations[station].coordinates
+                    }
+                    lista_cont += 1
                 }
-                lista_cont += 1
+                station += 1
             } else {
                 // --- SI LA ESTACIÓN NO EXISTE ---
                 station += 1
@@ -112,6 +139,28 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         document.getElementById("lista").innerHTML = ""
         for (var key in foundStations) {
             const estacion = foundStations[key];
+            if (estacion.linea === "A") {
+                foundLineaA += 1
+            }
+            if (estacion.linea === "B") {
+                foundLineaB += 1
+            }
+            if (estacion.linea === "C") {
+                foundLineaC += 1
+            }
+            if (estacion.linea === "D") {
+                foundLineaD += 1
+            }
+            if (estacion.linea === "E") {
+                foundLineaE += 1
+            }
+            if (estacion.linea === "H") {
+                foundLineaH += 1
+            }
+            if (estacion.linea === "P") {
+                foundLineaP += 1
+            }
+
             document.getElementById("lista").innerHTML +=
                 `<div style="cursor:pointer"
                     onclick="centerToStation(${estacion.coordinates[0]}, ${estacion.coordinates[1]})">
@@ -129,8 +178,13 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         document.getElementById("progress-p").innerHTML = (foundLineaP) + " / 18"
         // --- SELECCIONAR INPUT ---
         document.getElementById("input").select()
+        // --- CRONOMETRO ---
+        if (foundStations.length === stations.length) {
+            /// CRONOMETRO FINISH
+            stopCronometro()
+        }
     }
-});
+})
 
 // --- BOTON: MOSTRAR/OCULTAR PROGRESO DE LAS LÍNEAS ---
 document.getElementById('toggle-lineprogress').onclick = function() {
@@ -139,6 +193,11 @@ document.getElementById('toggle-lineprogress').onclick = function() {
     lp.classList.toggle('show')
     var lista = document.getElementById('lista')
     lista.classList.toggle('short')
+}
+
+// --- POP-UP ---
+document.getElementById('cerrar-popup').onclick = function() {
+    document.getElementById('popup').style.display = 'none'
 }
 
 // --- BOTON MENU ---
@@ -150,7 +209,12 @@ document.getElementById('boton').onclick = function(e) {
 document.addEventListener('click', function() {
     document.getElementById('menu-opciones').style.display = 'none'
 })
-
 document.getElementById('abrir-popup').onclick = function() {
-    document.getElementById('popup').style.display = 'block';
-};
+    document.getElementById('popup').style.display = 'block'
+}
+document.getElementById('abrir-github').onclick = function() {
+    window.open('https://github.com/Silverbone6/SubteMemoryGame', '_blank')
+}
+document.getElementById('abrir-inspiracion').onclick = function() {
+    window.open('https://london.metro-memory.com/', '_blank')
+}
