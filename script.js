@@ -139,26 +139,14 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         document.getElementById("lista").innerHTML = ""
         for (var key in foundStations) {
             const estacion = foundStations[key];
-            if (estacion.linea === "A") {
-                foundLineaA += 1
-            }
-            if (estacion.linea === "B") {
-                foundLineaB += 1
-            }
-            if (estacion.linea === "C") {
-                foundLineaC += 1
-            }
-            if (estacion.linea === "D") {
-                foundLineaD += 1
-            }
-            if (estacion.linea === "E") {
-                foundLineaE += 1
-            }
-            if (estacion.linea === "H") {
-                foundLineaH += 1
-            }
-            if (estacion.linea === "P") {
-                foundLineaP += 1
+            switch (estacion.linea) {
+                case "A": foundLineaA++; break;
+                case "B": foundLineaB++; break;
+                case "C": foundLineaC++; break;
+                case "D": foundLineaD++; break;
+                case "E": foundLineaE++; break;
+                case "H": foundLineaH++; break;
+                case "P": foundLineaP++; break;
             }
 
             document.getElementById("lista").innerHTML +=
