@@ -179,7 +179,7 @@ document.getElementById("input").addEventListener("keydown", function (event) {
         // --- SELECCIONAR INPUT ---
         document.getElementById("input").select()
         // --- CRONOMETRO ---
-        if (foundStations.length === stations.length) {
+        if (Object.keys(foundStations).length === stations.length) {
             /// CRONOMETRO FINISH
             stopCronometro()
         }
