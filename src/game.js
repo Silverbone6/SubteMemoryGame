@@ -46,6 +46,8 @@ function jugar (event) {
             }
         }
         if (!found) {
+            alert("Esa estación no existe!");
+            document.getElementById("input").value = "";
             console.log("Esa estación no existe");
         }
         // ---  ACTUALIZAR EL PORCENTAJE DE ESTACIONES ---
