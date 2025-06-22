@@ -427,7 +427,7 @@ var stations = [
   },
   {
     "id": 72,
-    "estacion": "LEANDRO N ALEM",
+    "estacion": "LEANDRO N. ALEM",
     "linea": "B",
     "coordinates": [-34.602989496633242, -58.369929850122439]
   },
